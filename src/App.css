@@ -12,6 +12,14 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/* Style the rest of your app as needed */
+
+@media (max-width: 768px) {
+  .table {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +43,416 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* App.css */
+/* App.css */
+/* Global styles */
+
+body {
+  font: 1.2rem "Fira Sans", sans-serif;
+  background-color: #ffff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding-top: 20px;
+  background-color: rgb(95, 192, 160); /* Updated color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd; /* Add border */
+}
+
+.qns {
+  text-align: left;
+
+}
+button {
+  background-color: rgb(95, 192, 160); /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  font-size: 1.2rem; /* Set the font size */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green background color on hover */
+}
+.input-container input {
+  padding: 10px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Border around the input */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Set the font size */
+}
+
+.input-container input:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #4caf50; /* Change border color on focus */
+}
+
+.container h3 {
+  border-bottom: 2px solid #ddd; /* Add border below the heading */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+
+}
+
+.container ul {
+  
+  list-style-type: none;
+  padding: 0;
+}
+
+.container li {
+
+  border-bottom: 1px solid #eee; /* Add border below each list item */
+  padding: 10px 0;
+  list-style: none;
+}
+
+.container li:last-child {
+  border-bottom: none; /* Remove border from the last list item */
+}
+.qns {
+  margin: 0;
+  padding: 0;
+}
+
+.qns ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.qns li {
+  background-color: #ffffff; /* Background color for each question */
+  border: 1px solid #ddd; /* Border around each question */
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+}
+.friend-answers table {
+  
+  border-radius: 8px; /* Adjust the value for the desired curvature */
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* Add styles for questions */
+.container li {
+  
+  background-color: #ffffff; /* Background color for each question */
+  border: 1px solid #ddd; /* Border around each question */
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+/* Navbar styles */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #34495e;
+  color: #ecf0f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.navbar-heading {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.navbar-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #e74c3c;
+}
+
+.navbar-link:active {
+  color: #e74c3c;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0;
+}
+
+/* Table styles */
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 5px;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.table th {
+  color: #333;
+}
+
+.table td {
+  color: #666;
+}
+
+/* Slam Book styles */
+
+.slam-book-container {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-input {
+  margin-bottom: 20px;
+}
+.heading{
+  margin-top: 80px;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container input {
+  margin-right: 8px;
+}
+
+.friend-answers {
+  margin-top: 20px;
+  text-align: center;
+ 
+}
+h4{
+  font-weight: 100;
+}
+/* Add these styles to your existing CSS */
+
+.answer-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.answer-container h2 {
+  font-size: 1.8rem;
+  color: black;
+}
+
+.answer-container div {
+  margin-top: 20px;
+}
+
+.answer-container h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.answer-container select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+/* Add these styles to your existing CSS */
+
+.answer {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(95, 192, 160);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px ;
+  
+}
+
+.answer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.answer input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.answer input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.answer button {
+  margin-top: 15px;
+  background-color: #ffff;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px ;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.answer button:hover {
+  background-color: rgb(95, 192, 160);
+}
+
+
+/* Add these styles to your existing CSS */
+
+/* Style for the select container */
+.settings-container {
+  background-color: #f3f3f3;
+  padding: 20px;
+  /* border-radius:solid black 8px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: none; /* Add this line to remove the border */
+ margin-bottom: 20px;
+}
+
+/* Add styles for the items below the dropdown */
+.select-dropdown + * {
+  margin-top: 10px; /* Add space between dropdown and the next element */
+}
+
+/* Style for the items below the dropdown */
+.select-container p {
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Add padding for better spacing */
+  background-color: #ffffff; /* Background color for each item */
+  border: 1px solid #ddd; /* Border around each item */
+  border-radius: 5px; /* Add border radius for a rounded look */
+}
+
+/* Style for the items on hover */
+.select-container p:hover {
+  background-color: #f5f5f5; /* Change background color on hover */
+}
+
+.settings-container h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Style for the select dropdown */
+.select-dropdown {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  appearance: none; /* Remove default arrow on Firefox */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' fill='%23333'%3E%3Cpath d='M0 0l6 6 6-6H0z'/%3E%3C/svg%3E"); /* Add custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 12px top 50%;
+  background-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.select-dropdown:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+/* styles.css */
+
+
+.setting-option {
+  margin-bottom: 15px;
+}
+
+.setting-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.setting-select,
+.setting-color {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Additional styles for better aesthetics */
+.setting-select {
+  background-color: #fff;
+}
+
+.setting-color {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.setting-option:last-child {
+  margin-bottom: 0;
 }
